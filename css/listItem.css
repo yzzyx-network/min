@@ -201,3 +201,9 @@ body.dark-mode.touch .searchbar-item .action-button {
 		display: none;
 	}
 }
+
+
+/* My custom CSS */
+.theme-background-color {
+	background-color: rgb(13, 15, 33) !important;
+}

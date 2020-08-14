@@ -327,3 +327,41 @@ body:not(.dark-theme) .progress-bar {
 	transform: translateX(0%);
 	transition: transform 500ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
+
+
+
+/* My custom CSS */
+.tab-item.active {
+    font-weight: bold;
+    font-style: italic;
+}
+
+.tab-item:not(.active):hover {
+	font-weight: bold;
+	opacity: .9;
+}
+
+.tab-item.fade, .tab-item:not(.active) {
+	opacity: unset;
+	opacity: .6;
+}
+
+#back-button, #menu-button, #add-tab-button, #switch-task-button, #linux-control-buttons, #navbar {
+	background-color: rgba(22, 25, 71, 0.73) !important;
+}
+
+#back-button:hover, #menu-button:hover, #add-tab-button:hover, #switch-task-button:hover {
+	background-color: #7fff0029 !important;
+}
+
+#back-button:active, #menu-button:active, #add-tab-button:active, #switch-task-button:active {
+	background-color: #7fff0070 !important;
+}
+
+.tab-close-button:hover {
+	color: #ff2700;
+}
+
+.tab-close-button:active {
+	color: #ff2700ad;
+}

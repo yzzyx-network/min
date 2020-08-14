@@ -261,3 +261,48 @@ body.dark-mode #task-overlay{
 .dark-mode #switch-task-button {
   color: dodgerblue;
 }
+
+
+/* My custom CSS */
+
+#task-overlay {
+ 	opacity: .95; 
+}
+
+#task-area {
+	background-color: rgb(13, 15, 33) !important;
+}
+
+button#add-task {
+    opacity: 1;
+    background: rgba(-33, -14, 27, 1) !important;
+    z-index: 20;
+}
+.simulated-navbar {
+    opacity: 1; 
+	background-color: rgba(14, 20, 42, 1);
+}
+.task-container.selected {
+	color: white;
+	background-color: rgba(13, 21, 38, 1);
+}
+.task-container.selected .task-name {
+	font-weight: bold;
+ 	font-size: x-large;
+ 	padding-top: 0px;
+}
+.task-container:not(.selected) {
+	color: #d3d3d3b8;
+}
+.task-container:not(.selected) .task-name {
+	font-weight: bold;
+	font-size: larger;
+}
+.task-delete-button:hover {
+	color: tomato;
+	cursor: help;
+}
+
+.searchbar-item .action-button:hover {
+	color: #d63232e8;
+}

@@ -11,7 +11,7 @@ function getFileSizeString (bytes) {
     prefixIndex++
   }
 
-  return (Math.round(size * 10) / 10) + ' ' + prefixes[prefixIndex]
+  return (Math.round(size * 10) / 10) + prefixes[prefixIndex]
 }
 
 const downloadManager = {
@@ -169,7 +169,7 @@ const downloadManager = {
       elements.progress.hidden = false
       elements.dropdown.hidden = false
       elements.openFolder.hidden = true
-      elements.infoBox.textContent = getFileSizeString(downloadItem.size.total)
+      elements.infoBox.textContent = getFileSizeString(downloadItem.size.received) + '/' + getFileSizeString(downloadItem.size.total)
       elements.progress.style.transform = 'scaleX(' + (downloadItem.size.received / downloadItem.size.total) + ')'
     }
   },

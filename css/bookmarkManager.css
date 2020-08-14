@@ -91,3 +91,10 @@
 .dark-theme .tag-edit-area .tag-input::-webkit-input-placeholder {
     color: rgba(255, 255, 255, 0.66);
 }
+
+
+/* My Custom CSS */
+#tab-editor {
+    background: #02030a;
+    opacity: 1;
+}
